@@ -1,0 +1,15 @@
+{
+  "name": "og-web-console",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "OG Web Control Console Dashboard",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "postinstall": "python3 -m pip install -r requirements.txt && python3 -m playwright install --with-deps chromium || true"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "express-session": "^1.18.0"
+  }
+}
